@@ -1,0 +1,227 @@
+/*All*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-image: linear-gradient(to top, #04074f, #000b46, #010c3c, #040c32, #070c27);
+    height: max-content;
+    min-height: 100vh;
+}
+
+/*Header Page*/
+
+.page-header {
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #030833;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 20px #0000003d;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-right img {
+    max-width: 4rem;
+}
+
+.navbar-right h2 {
+    padding: .50rem;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+.navbar-right h2:hover {
+    text-decoration: underline;
+}
+
+.notebtn, .homebtn {
+    margin-top: .80rem;
+    margin-right: 2rem;
+    border: 2px solid #808080;
+    background-color: #808080;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #808080;
+    padding: 3px 30px;
+    font-size: 1.50rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s ease-out;
+}
+
+.homebtn {
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    box-shadow: 0 0 10px lightblue;
+}
+
+.notebtn:hover, .homebtn:hover {
+    background-color: transparent;
+}
+
+/*Hero Page*/
+
+.page-hero {
+    font-family: "Rubik", sans-serif;
+    padding: 1rem;
+    color: #fff;
+}
+
+.page-hero h1 {
+    font-size: 4rem;
+}
+
+.page-hero p {
+    margin-left: .50rem;
+}
+
+.hero-more {
+    margin-top: 1rem;
+    padding: .50rem;
+}
+
+.hero-more img {
+    box-shadow: 0 0 30px #0000006d;
+    border-radius: 20px;
+    max-width: 30rem;
+}
+
+.hero-more p {
+    width: 30rem;
+    font-weight: bold;
+    color: #a5a5a5;
+}
+
+/*Notepad*/
+
+.notepad-container {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.notepad-bottom h1 {
+    font-size: 4rem
+}
+
+.notepad-content {
+    margin-top: 1rem;
+}
+
+#errorMsg {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#textAreaContent {
+    resize: none;
+    height: 10rem;
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #fff;
+    font-size: 1.05rem;
+    color: #909090;
+}
+
+#textAreaContent:focus {
+    outline: none;
+}
+
+#saveBtn {
+    margin-top: .50rem;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #222a88;
+    border-radius: 30px;
+    background-color: #222a88;
+    box-shadow: 0 0 5px #222a88;
+    padding: 3px 30px;
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+
+#saveBtn:hover {
+    background-color: #141a4e;
+    border: 2px solid #141a4e;
+    box-shadow: 0 0 5px #141a4e;
+}
+
+/*Save Notes*/
+
+.saveNotes {
+    margin-top: .50rem;
+}
+
+.saveNotes h2 {
+    font-size: 3rem;
+}
+
+.search input {
+    padding: 5px 5px;
+    border: 2px solid #141a4e;
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.saveItems {
+    margin-top: .50rem;
+    display: flex;
+    justify-content: center;
+}
+
+.noteItem {
+    padding: 10px;
+    position: relative;
+    word-wrap: break-word;
+    max-width: 50rem;
+}
+
+.noteItem:hover {
+    border-radius: 10px;
+    background: #7070703d;
+}
+
+.editArea {
+    display: none;
+    margin-top: 1rem;
+}
+
+#editContent {
+    font-family: monospace, sans-serif;
+    font-size: 1.05rem;
+    box-shadow: 0 0 5px #fff;
+    width: 30rem;
+    height: 10rem;
+    resize: none;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #747474;
+}
+
+#editContent:focus {
+    outline: none;
+}
+
+#deleteButton, #updateButton, #cancelButton {
+    padding: 3px 10px;
+    border: none;
+    border: 1px solid #8080803d;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}

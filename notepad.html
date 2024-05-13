@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Notepad | Write</title>
+</head>
+<body>
+<!--Page Header-->
+<header class="page-header">
+  <div class="navbar-right">
+    <img src="./assets/favicon.svg" alt="Your Notepad Logo">
+    <h2>Your Notepad</h2>
+  </div>
+  <div class="navbar-left">
+    <a href="index.html">
+      <button class="homebtn" title="Back to top">Home</button>
+    </a>
+  </div>
+</header>
+<!--Notepad-->
+<section class="notepad-container">
+    <div class="notepad-bottom">
+       <h1><b style="color: lightblue">¡</b>Notepad<b style="color: lightblue">!</b></h1>
+       <p>Save your notes here, safe and efficient</p>
+        <div id="errorMsg"></div>
+        <div class="notepad-content">
+            <textarea id="textAreaContent" placeholder="Type here.." title="Write a note"></textarea>
+            <div>
+                <button id="saveBtn" title="Save Note">Save Note</button>
+            </div>
+        </div>
+    </div>
+    <div class="saveNotes">
+        <h2>Saved Notes</h2>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search keywords">
+        </div>
+        <div class="saveItems">
+            <ul id="noteList" title="Click to edit."></ul>
+        </div>
+        <div id="editArea" class="editArea">
+            <textarea id="editContent" placeholder="Edit note.." maxlength="500"></textarea>
+            <div id="errorDown"></div>
+            <div class="buttons">
+                <button id="updateButton" title="Update this note" style="box-shadow: 0 0 4px #ffffff;color: #404040;">Update</button>
+                <button id="deleteButton" style="background-color: #dc3545;box-shadow: 0 0 4px #ff0000;" title="Delete this note">Delete</button>
+                <button id="cancelButton" style="background-color: #808080;color: #fff;box-shadow: 0 0 4px #808080;" title="Cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./main.js"></script>
+</body>
+</html>
